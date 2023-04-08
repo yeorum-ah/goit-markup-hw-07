@@ -428,15 +428,19 @@ body {
 .clients {
   text-align: center;
 }
+
 .clients-title {
   font-family: 'Roboto';
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.17;
   margin-bottom: 50px;
 }
 .clients-card {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
 }
 
 .clients-link {
@@ -448,16 +452,18 @@ body {
   border-radius: 4px;
   width: 170px;
   height: 90px;
+  
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
-.clients-list:last-child {
+/* .clients-list:last-child {
   margin-right: 0px;
-}
+} */
 
 .clients-link:hover,
 .clients-link:focus {
@@ -1250,5 +1256,11 @@ textarea {
   .features-list:nth-child(4) {
     margin-right: 0px;
   }
+  .clients-title{
+    font-size: 36px;
+  }
+ .clients-card{
+  flex-wrap: nowrap;
+ }
   }
 
