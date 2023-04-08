@@ -212,25 +212,80 @@ body {
 /*Герой*/
 .hero {
   background-color: #2f303a;
-  max-width: 1600px;
+  /* max-width: 1600px; */
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+    padding-bottom: 0px;
+  /* padding-top: 200px;
+  padding-bottom: 200px; */
   color: var(--white);
   text-align: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/bg.jpg);
-  background-repeat: no-repeat;
+    url(../images/headerbg/header-mob.jpg);
+    background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-}
+  background-size: cover;}
+     @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+       .hero{background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/headerbg/header-mob@2x.jpg);
+   }}
+
+  @media screen and (min-width: 768px) {
+       .hero {background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/headerbg/header-tab.jpg");}}
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+         .hero {background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/headerbg/header-tab@2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+      .hero {background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/headerbg/bgpc.jpg");}}
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .hero{ background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/headerbg/bg@2x.jpg");
+    }
+  }
+
+ 
+
 .hero-title {
   color: var(--white);
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
-  width: 696px;
+  /* width: 360px; */
   margin: 0 auto;
   margin-bottom: 30px;
   letter-spacing: 0.06em;
@@ -241,7 +296,7 @@ body {
   color: var(--white);
   background-color: var(--blue);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.8;
   display: inline-block;
   text-align: center;
@@ -250,7 +305,7 @@ body {
   border-radius: 4px;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  min-width: 200px;
+  min-width: 140px;
   border: 0;
 }
 .modal-btn:hover .modal-btn:focus {
@@ -755,8 +810,9 @@ body {
 }
 
 .modal {
-  height: 581px;
-  width: 528px;
+  /* height: 581px;
+  width: 528px; */
+  width: 100%;
   min-height: 581px;
   background-color: var(--white);
   position: absolute;
@@ -849,6 +905,7 @@ input:focus + .form-icon {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 12px;
 }
 
 textarea {
@@ -856,7 +913,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 12px 16px;
   height: 120px;
-  width: 448px;
+  /* width: 448px; */
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1037,7 +1094,10 @@ textarea {
    .contacts{
     display: none;
    }
-   
+   .modal {
+    width: 450px;
+    height: 609px;
+   }
 } 
 @media screen and (min-width:768px) {
   .container {
@@ -1047,12 +1107,14 @@ textarea {
   .contacts .mail,
 .contacts .tel {
   margin-left: 60px;
+  
 }
   
   .features-card {
     width: calc((100% - 30px)/ 2);
     
   }
+  .modal{max-width: 450px;}
 }
    
 @media screen and (max-width: 767px) {
@@ -1217,7 +1279,7 @@ textarea {
   flex-wrap: wrap;
   padding-bottom: 21px;
   
-  gap: 10px; ;
+  /* gap: 10px; ; */
 }
 .top-line{
   height: 80px;
