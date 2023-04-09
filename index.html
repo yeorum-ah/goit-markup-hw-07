@@ -15,9 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-  
-    
-   
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -26,7 +24,8 @@
       <div class="container top-line">
         <nav class="nav-container">
           <a href="./index.html" class="logo">
-            <span class="logo-blue">Web</span><span class="logo-black">Studio</span>
+            <span class="logo-blue">Web</span
+            ><span class="logo-black">Studio</span>
           </a>
           <ul class="site-nav">
             <li class="pages">
@@ -40,7 +39,10 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-btn mobile-menu-btn_open js-open-menu">
+        <button
+          type="button"
+          class="mobile-menu-btn mobile-menu-btn_open js-open-menu"
+        >
           <svg class="mobile-menu-btn__icon" width="40" height="40">
             <use href="./images/icons.svg#mobile-menu"></use>
           </svg>
@@ -65,19 +67,26 @@
       </div>
       <div class="mobile-menu js-menu-container">
         <div class="container mobile-menu__container">
-          <button type="button" class="mobile-menu-btn mobile-menu-close-btn js-close-menu">
+          <button
+            type="button"
+            class="mobile-menu-btn mobile-menu-close-btn js-close-menu"
+          >
             <svg class="mobile-menu-btn__icon" width="40" height="40">
               <use href="./images/icons.svg#close-menu"></use>
             </svg>
           </button>
           <ul class="mobile-menu__list list">
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link mobile-menu__link_current link" href="./index.html"
+              <a
+                class="mobile-menu__link mobile-menu__link_current link"
+                href="./index.html"
                 >Студія</a
               >
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="./portfolio.html">Портфоліо</a>
+              <a class="mobile-menu__link link" href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
             <li class="mobile-menu__item">
               <a class="mobile-menu__link link" href="#">Контакти</a>
@@ -90,7 +99,9 @@
               >
             </li>
             <li class="mobile-menu__contacts-item">
-              <a class="mobile-menu__contacts-email link" href="mailto:info@devstudio.com"
+              <a
+                class="mobile-menu__contacts-email link"
+                href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
@@ -114,10 +125,12 @@
     </header>
     <main>
       <!--секція1 особливості-->
-     <section class="hero section">
+      <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="modal-btn" type="button" data-modal-open>Замовити послугу</button>
+          <button class="modal-btn" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <section class="section">
@@ -132,7 +145,8 @@
               </div>
               <h3 class="features-title">Увага до деталей</h3>
               <p class="features-desc">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
               </p>
             </li>
             <li class="features-card">
@@ -143,7 +157,8 @@
               </div>
               <h3 class="features-title">Пунктуальність</h3>
               <p class="features-desc">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
               </p>
             </li>
             <li class="features-card">
@@ -165,7 +180,8 @@
               </div>
               <h3 class="features-title">Сучасні технології</h3>
               <p class="features-desc">
-                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
               </p>
             </li>
           </ul>
@@ -206,12 +222,40 @@
         </div>
       </section>-->
       <!--секція3 нвша команда-->
-     <!----<section class="team section">
+      <section class="team section">
         <div class="members container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-card">
-              <img src="images/team/team1.jpg" alt="team card 1" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team1.jpg    1x,
+                    ./images/team/team1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-tab.jpg    1x,
+                    ./images/team/team-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-m.jpg    1x,
+                    ./images/team/team-m@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="images/team/team-m.jpg"
+                  alt="team card 1"
+                  width="450"
+                />
+              </picture>
+
               <div class="team-div">
                 <h3 class="team-member">Ігор Дем'яненко</h3>
                 <p class="position">Product Designer</p>
@@ -248,7 +292,35 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="images/team/team2.jpg" alt="team card 2" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team2.jpg    1x,
+                    ./images/team/team2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-tab2.jpg    1x,
+                    ./images/team/team-tab2@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-m2.jpg    1x,
+                    ./images/team/team-m2@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="images/team/team-m2.jpg"
+                  alt="team card 2"
+                  width="450"
+                />
+              </picture>
+
               <div class="team-div">
                 <h3 class="team-member">Ольга Рєпіна</h3>
                 <p class="position">Frontend Developer</p>
@@ -285,7 +357,35 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="images/team/team3.jpg" alt="team card 3" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team3.jpg    1x,
+                    ./images/team/team3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-tab3.jpg    1x,
+                    ./images/team/team-tab3@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-m3.jpg    1x,
+                    ./images/team/team-m3@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="images/team/team-m3.jpg"
+                  alt="team card 3"
+                  width="450"
+                />
+              </picture>
+
               <div class="team-div">
                 <h3 class="team-member">Микола Тарасов</h3>
                 <p class="position">Marketing</p>
@@ -322,7 +422,35 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="images/team/team4.jpg" alt="team card 4" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team4.jpg    1x,
+                    ./images/team/team4@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-tab4.jpg    1x,
+                    ./images/team/team-tab4@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-m4.jpg    1x,
+                    ./images/team/team-m4@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="images/team/team-m4.jpg"
+                  alt="team card 4"
+                  width="450"
+                />
+              </picture>
+
               <div class="team-div">
                 <h3 class="team-member">Михайло Єрмаков</h3>
                 <p class="position">UI Designer</p>
@@ -360,7 +488,7 @@
             </li>
           </ul>
         </div>
-      </section>-->
+      </section>
       <!--секція4 постійні клієнти-->
       <section class="clients section">
         <div class="container clients-div">
@@ -412,12 +540,14 @@
         </div>
       </section>
     </main>
+    7
     <!--Підвал-->
-   <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-adress">
           <a href="#" class="logo">
-            <span class="logo-blue">Web</span><span class="logo-white">Studio</span>
+            <span class="logo-blue">Web</span
+            ><span class="logo-white">Studio</span>
           </a>
           <address class="adress-list">
             <ul class="list">
@@ -431,7 +561,9 @@
                 >
               </li>
               <li class="mail-footer footer-list">
-                <a href="mailto:info@devstudio.com" class="mail">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com" class="mail"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="tel-footer footer-list">
                 <a href="tel:+380961111111" class="tel">+38 096 111 11 11</a>
@@ -476,7 +608,13 @@
           <p class="news-title">Підпишіться на розсилку</p>
           <form class="footer-form">
             <label for="mail"></label>
-            <input type="email" name="email" id="mail" placeholder="E-mail" autocomplete="on" />
+            <input
+              type="email"
+              name="email"
+              id="mail"
+              placeholder="E-mail"
+              autocomplete="on"
+            />
             <button class="submit" type="submit">
               Підписатися
               <svg class="icon-btn" width="24" height="24">
@@ -525,11 +663,20 @@
           </div>
           <div class="form-comment">
             <label for="comment"> Коментар </label>
-            <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
+            <textarea
+              name="comment"
+              id="comment"
+              placeholder="Введіть текст"
+            ></textarea>
           </div>
           <div class="form-checkbox">
             <label class="checkbox-wrapper">
-              <input class="check-input" type="checkbox" name="verification" value="agreement" />
+              <input
+                class="check-input"
+                type="checkbox"
+                name="verification"
+                value="agreement"
+              />
               <svg class="check-icon" width="16" height="15">
                 <use href="./images/icons.svg#icon-vector-tick"></use>
               </svg>
